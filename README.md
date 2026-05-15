@@ -1,4 +1,4 @@
-# 신한DS SW아카데미 7기 알고리즘 스터디
+# 🐥 신한DS SW아카데미 7기 알고리즘 스터디
 
 코딩테스트 준비를 위해 만들어진 저장소입니다.  
 많은 분들의 참여 바랍니다.  
@@ -42,7 +42,8 @@
 
 ---
 
-## 2. 완전 초보용: 10분 참여 가이드
+## 2. 완전 초보용: 10분 참여 가이드  
+깃과 깃허브를 처음 사용하시는 분은 git_stting.md 파일을 참고해서 환경세팅 먼저 해주세용
 
 ### STEP 1) 저장소 받기
 
@@ -86,11 +87,8 @@ touch solutions/python/kimminsu/week01_두수의합.py
 ```bash
 git add .
 git commit -m "feat: week01 두 수의 합 풀이 추가 (python/kimminsu)"
-git push origin main
+git push -u origin main
 ```
-
-> IDE를 쓰는 경우: Source Control에서 Commit 후 Push 버튼만 누르면 됩니다.
-> 폴더에서 Push해도 됩니다.
 
 ---
 
