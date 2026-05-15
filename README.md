@@ -86,11 +86,8 @@ touch solutions/python/kimminsu/week01_두수의합.py
 ```bash
 git add .
 git commit -m "feat: week01 두 수의 합 풀이 추가 (python/kimminsu)"
-git push origin main
+git push -u origin main
 ```
-
-> IDE를 쓰는 경우: Source Control에서 Commit 후 Push 버튼만 누르면 됩니다.
-> 폴더에서 Push해도 됩니다.
 
 ---
 
