@@ -114,9 +114,7 @@ git config --global core.editor "code --wait"
 
 ---
 
-## 7) 실습 예시: 저장소 clone → 작업파일 생성 → add/commit/push
-
-아래는 제공해주신 저장소 주소를 기준으로, 원하는 폴더에 clone해서 작업하는 예시입니다.
+## 7) 초기 저장소 연결 세팅
 
 저장소 주소:
 `https://github.com/kowonyeong/coding-study.git`
@@ -131,21 +129,15 @@ git clone https://github.com/kowonyeong/coding-study.git
 # 3) 저장소 폴더로 이동
 cd coding-study
 
-# 4) 내 작업 폴더 생성 (예: wonyeong-work)
-mkdir -p wonyeong-work
-
-# 5) 작업 파일 생성 (예: week_test1.py)
-printf "print('week test 1')
-" > wonyeong-work/week_test1.py
-
-# 6) 상태 확인
-git status
+# 4) 내 작업 폴더와 파일 생성
+coding-study/solutions/python/고원영/week1_test.py
 
 # 7) 파일 add
-git add wonyeong-work/week_test1.py
+git add week1_test.py
+git add . (이렇게 전체 파일 올려도 무방)
 
 # 8) 커밋
-git commit -m "Add week_test1.py in personal work folder"
+git commit -m "1주차 문제 풀이" (커밋 텍스트는 상황에 맞게 변경)
 
 # 9) 원격 저장소 확인 (clone했기 때문에 보통 이미 origin이 연결됨)
 git remote -v
