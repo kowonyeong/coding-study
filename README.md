@@ -6,6 +6,13 @@
 많은 것 얻어가시면 좋겠습니다! 
 
 ---
+당부의 말씀..
+문제 풀이가 안 된다고 해서 다른 분들의 풀이를 미리 안 보셨으면 합니다.  
+실력 향상에 도움이 1도 안되는 행동입니다. 강제하지는 않지만 실력 향상을 위해 문제풀이는 본인 힘으로 해보시고  
+안되시면 풀으신 분께 가서 도움 요청하는 식으로 진행하도록 하겠습니다  
+도움 요청 받으시면 알려주는것도 공부에 도움이 많이 되니 잘 알려주시기 바랍니다.  
+모른다고 절대 부끄러운것이 아니니 적극적인 참여 부탁드립니다~~~~
+---
 
 ## 0. 이 저장소에서 꼭 기억할 3가지
 
@@ -34,8 +41,6 @@
     ├── java/
     │   └── README.md
     ├── cpp/
-    │   └── README.md
-    └── javascript/
         └── README.md
 ```
 
@@ -55,7 +60,6 @@ cd coding-study
 - Python: `solutions/python/`
 - Java: `solutions/java/`
 - C++: `solutions/cpp/`
-- JavaScript: `solutions/javascript/`
 
 언어 구역 안에서 본인 이름 폴더를 만들어 사용하세요.
 
@@ -90,6 +94,7 @@ git push origin main
 ```
 
 > IDE를 쓰는 경우: Source Control에서 Commit 후 Push 버튼만 누르면 됩니다.
+> 폴더에서 Push해도 됩니다.
 
 ---
 
@@ -103,7 +108,6 @@ git push origin main
 - `solutions/python/<이름>/...`
 - `solutions/java/<이름>/...`
 - `solutions/cpp/<이름>/...`
-- `solutions/javascript/<이름>/...`
 
 ---
 
@@ -118,17 +122,6 @@ git push origin main
 - `진행중`
 - `완료`
 - `리뷰완료`
-
----
-
-## 5. 업로드 전 체크리스트
-
-- [ ] 내 풀이가 올바른 언어 폴더에 있는가?
-- [ ] 파일명이 규칙에 맞는가?
-- [ ] `problems/weekXX/README.md` 상태를 갱신했는가?
-- [ ] 실행/테스트를 로컬에서 확인했는가?
-- [ ] 커밋 메시지가 무엇을 했는지 분명한가?
-
 ---
 
 ## 6. 자주 하는 실수
