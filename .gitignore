@@ -14,5 +14,36 @@ __pycache__/
 # Node
 node_modules/
 
+# Java
+*.class
+*.jar
+*.war
+*.ear
+target/
+build/
+out/
+
+# Gradle
+.gradle/
+
+# Maven
+.mvn/
+target/
+
+# C++
+*.o
+*.obj
+*.exe
+*.out
+*.app
+*.dll
+*.so
+*.a
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake-build-*/
+
 # Logs
 *.log
