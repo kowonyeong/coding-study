@@ -82,13 +82,16 @@ touch solutions/python/kimminsu/week01_두수의합.py
 - `weekNN_문제이름.확장자`
 - 공백 대신 `_` 사용
 
-### STEP 5) 커밋 + push (브랜치 생성 없음)
+### STEP 5) 브랜치생성 + 커밋 + push 
 
 ```bash
+git checkout -b <브랜치 네임>
 git add .
-git commit -m "feat: week01 두 수의 합 풀이 추가 (python/kimminsu)"
-git push -u origin main
+git commit -m "문제풀이"
+git push -u origin <브랜치 네임>
 ```
+### STEP 6) Pull requests  
+깃허브에서 pr생성
 
 ---
 
