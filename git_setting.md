@@ -130,7 +130,7 @@ git clone https://github.com/kowonyeong/coding-study.git
 cd coding-study
 
 # 4) 내 작업 폴더와 파일 생성
-coding-study/solutions/python/고원영/week1_test.py
+coding-study/solutions/python/wonyoung/week1_test.py
 
 # 7) 파일 add
 git add week1_test.py
