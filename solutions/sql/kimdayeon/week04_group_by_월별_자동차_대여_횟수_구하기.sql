@@ -1,0 +1,38 @@
+/**
+ * [kimdayeon] week04 - 월별_자동차_대여_횟수_구하기
+ * 유형: group_by
+ * 날짜: 2026-06-26
+ * 출처: https://school.programmers.co.kr
+ *
+ * 학습 내용:
+ * 서브쿼리에서 기간을 먼저 필터링 했어도 메인 쿼리에서도 기간을 필터링해줘야함. join과 in 서브쿼리의 차이
+ */
+
+# SELECT
+#     MONTH(c.START_DATE) AS MONTH,
+#     c.CAR_ID,
+#     CASE WHEN COUNT(*) != 0 THEN COUNT(*) END AS RECORDS
+# FROM CAR_RENTAL_COMPANY_RENTAL_HISTORY c
+# JOIN (SELECT CAR_ID FROM CAR_RENTAL_COMPANY_RENTAL_HISTORY
+#     WHERE START_DATE >= '2022-08-01' AND START_DATE < '2022-11-01'
+#     GROUP BY CAR_ID
+#     HAVING COUNT(*) >= 5) g ON c.CAR_ID = g.CAR_ID
+# GROUP BY MONTH(c.START_DATE), c.CAR_ID
+# ORDER BY MONTH(c.START_DATE) ASC, c.CAR_ID DESC;
+
+SELECT
+    MONTH(START_DATE) AS MONTH,
+    CAR_ID,
+    COUNT(*) AS RECORDS
+FROM CAR_RENTAL_COMPANY_RENTAL_HISTORY
+WHERE START_DATE BETWEEN '2022-08-01' AND '2022-10-31' -- [해당 기간 데이터만 집계]
+  AND CAR_ID IN (
+      -- [해당 기간 동안 총 대여 횟수가 5회 이상인 자동차 ID 추출]
+      SELECT CAR_ID
+      FROM CAR_RENTAL_COMPANY_RENTAL_HISTORY
+      WHERE START_DATE BETWEEN '2022-08-01' AND '2022-10-31'
+      GROUP BY CAR_ID
+      HAVING COUNT(*) >= 5
+  )
+GROUP BY MONTH(START_DATE), CAR_ID
+ORDER BY MONTH ASC, CAR_ID DESC
